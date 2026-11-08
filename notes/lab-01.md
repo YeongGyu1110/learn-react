@@ -1,8 +1,8 @@
 ## 배운 것
- - React는 JSX 문법을 사용하는데, 브라우저는 JSX 문법을 바로 읽지 못하기에 이를 변환하는 `vite` 빌드 도구가 필요하다.
+ - React는 JSX 문법을 사용하는데, 브라우저는 JSX 문법을 바로 읽지 못하기에 이를 JS로 변환하는 `vite` 빌드 도구가 필요하다.
  - 프로젝트 생성
     - React 프로젝트는 `npm create vite@latest .`로 생성할 수 있다.
-        - `npm create-<이름>`은 패키지를 설치하고 바로 실행하는 명령어다.
+        - `npm create <이름>`은 `create-<이름>`패키지를 임시로 받아서 실행하는 명령어다.
         - `@latest`는 패키지의 최신버전을 사용하라는 뜻이다. 이를 생략할 경우, 캐시에 남은 예전 버전이 실행될 수 있다.
         - `.`은 현재 위치에 프로젝트를 만들라는 뜻이다.
  - 의존성 설치 및 개발 서버 실행
@@ -53,3 +53,11 @@
  - `export`, `export default`
  - `import`, `import { ... } from ...`, `import ... from ...` 등
  - `import`와 `require`의 차이
+
+## 요약
+ - `vite`는 개발 서버에 요청이 들어오면 `jsx`를 `js`로 변환해서 보내주기 때문에 브라우저에서 `jsx`를 사용할 수 있다.
+ - `npm create vite@latest .`로 프로젝트 생성
+ - `npm i`로 패키지 설치
+ - `npm run dev`로 개발 서버 열기
+ - jsx를 반환하는 함수를 '컴포넌트'라 부른다.
+ - `App.jsx`에서 `App`을 `export`한거를 `main.jsx`에서 받는다. `main.jsx`는 `index.html`에서 `root` id를 가진 요소 내부에 `App`을 그려넣는다.
