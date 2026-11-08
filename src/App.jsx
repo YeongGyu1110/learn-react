@@ -1,8 +1,14 @@
+import multiply, { add as plus, subtract } from './utils/math.js'
+import Profile from './components/Profile.jsx'
+
 function App() {
   return (
     <>
       <h1>안녕, React!</h1>
-      <p>React를 배워 프론트엔드 개발자가 되고 싶습니다.</p>
+      <Profile />
+      <p>2 + 3 = {plus(2,3)}</p>
+      <p>10 - 4 = {subtract(10,4)}</p>
+      <p>3 * 4 = {multiply(3,4)}</p>
     </>
   )
 }
